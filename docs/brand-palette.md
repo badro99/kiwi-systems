@@ -12,7 +12,7 @@ Explicitly selected for the entire Kiwi Systems website on 2026-10-16. Reference
 
 Neutral white and gray text retains its contrast. Accent text, status dots, borders, gradients, focus indicators, selection colors, connection animations and navigation tints use the corresponding Bougainvillée values with the existing opacity levels.
 
-The existing Systems, Commerce, Kiwi wordmark, monogram, sparkle and favicon files are recolored in place. Their vector outlines, proportions and typography remain unchanged. No alternate or replacement mark is introduced into Kiwi OS.
+The Kiwi wordmark, monogram and favicon retain their original approved green/mint colors. In the Systems and Commerce lockups, only the Kiwi mark uses those original colors; the divider and branch descriptor remain Bougainvillée. The decorative sparkle stays Bougainvillée. Vector outlines, proportions and typography remain unchanged. Existing files are edited in place.
 
 The WebGL model, animation, camera, interaction and scroll timing remain the original Kiwi scene. Its material uses Vif and Fleur; its point lights use Vif and Fleur. The original green-producing hue grade is removed so it cannot override the new palette. The canvas clear color remains black.
 

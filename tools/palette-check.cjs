@@ -9,7 +9,10 @@ const approved=new Set([palette.nuit,palette.velours,palette.vif,palette.fleur].
 const svgFiles=fs.readdirSync(path.join(root,'assets')).filter(f=>f.endsWith('.svg'));
 const authored=['styles.css','index.html','app.js','theme.js','scene.js',...svgFiles.map(f=>'assets/'+f)];
 for(const file of authored){
- const source=read(file);
+ const full=read(file);
+ const logo=['kiwi-logo.svg','kiwi-mark.svg','favicon.svg','kiwi-systems.svg','kiwi-commerce.svg'].some(name=>file==='assets/'+name);
+ const source=logo?(full.includes('<!-- divider -->')?full.split('<!-- divider -->')[1]:''):full;
+ if(logo){assert.match(full,/#(?:398063|058161|058261)/i,'Original Kiwi logo green missing: '+file);if(full.includes('<!-- divider -->'))assert.match(source,/#ff8fc8/i,'Branch descriptor must stay Bougainvillée');}
  for(const match of source.matchAll(/#([\da-f]{3,8})\b/gi)){
   let rgb=match[1].toLowerCase();if(rgb.length===3)rgb=[...rgb].map(x=>x+x).join('');if(rgb.length===8)rgb=rgb.slice(0,6);if(rgb.length!==6)continue;
   const channels=[0,2,4].map(i=>parseInt(rgb.slice(i,i+2),16));
