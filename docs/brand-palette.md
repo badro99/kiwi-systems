@@ -1,10 +1,9 @@
-# Original Kiwi identity with a Bougainvillée sphere
+# Original Kiwi identity with a Majorelle sphere
 
-Current direction: restore the original Kiwi colors everywhere except the animated background sphere, which stays pink. The background remains black.
+Only the background sphere uses the alternate palette. UI, logos, text, layout and interaction retain their original Kiwi identity. The background remains black.
 
-- `styles.css` and the existing SVG assets are restored exactly from the original Kiwi Systems version (`b48ff50`). This includes Systems and Commerce descriptors, wordmarks, monogram, favicon, sparkle, UI tints, accent text, status dots and decorative connection animations.
-- `scene.js` and `theme.js` retain the Bougainvillée sphere material, lighting and animation without changes. Nuit `#1B0E2E`, Velours `#5C1F4E`, Vif `#C1487E`, Fleur `#FF8FC8` remain the sphere palette.
-- The existing pink fallback posters and social-preview image are retained.
-- Layout, copy, interaction and scroll timing remain unchanged.
+Majorelle Vif `#3955D6` is the primary sphere color and emission. Majorelle Néon `#5BD5FF` supplies the secondary light. The reference palette also records Nuit `#0A1230` and Velours `#1E2F7C`.
 
-All project files live in `Documents/kiwi-systems`. Kiwi OS files and master logo assets remain untouched.
+Camera, model, animation, bloom, scroll choreography and pointer easing are unchanged. Fallback posters and the social-preview image are recaptured from this scene.
+
+All files remain in `Documents/kiwi-systems`. Kiwi OS is untouched.

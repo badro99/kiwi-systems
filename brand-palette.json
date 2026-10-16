@@ -1,14 +1,14 @@
 {
-  "name": "Kiwi original · Bougainvillée background sphere",
-  "nuit": "#1B0E2E",
-  "velours": "#5C1F4E",
-  "vif": "#C1487E",
-  "fleur": "#FF8FC8",
+  "name": "Kiwi original · Majorelle background sphere",
+  "nuit": "#0A1230",
+  "velours": "#1E2F7C",
+  "vif": "#3955D6",
   "background": "#000000",
   "ui": {
     "accent": "#00FFAE",
     "growth": "#398063",
     "mint": "#AAF0C1",
     "background": "#000000"
-  }
+  },
+  "neon": "#5BD5FF"
 }

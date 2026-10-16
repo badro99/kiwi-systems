@@ -1,12 +1,12 @@
 /**
  * Kiwi OS scene, ported from its shipped module 47373.
  * Original model, animation, camera, pointer easing and scroll keyframes
- * are preserved. Materials and lights use the Bougainvillée palette. Asset URLs are relative
+ * are preserved. Materials and lights use the Majorelle palette. Asset URLs are relative
  * to this module so the same scene works on GitHub project Pages.
  */
 import {THREE as T, POST as P} from './assets/vendor/kiwi-three.js';
 import {GLTFLoader, DRACOLoader} from './assets/vendor/kiwi-loaders.js';
-import {BOUGAINVILLEE as palette} from './theme.js';
+import {MAJORELLE as palette} from './theme.js?v=7';
 
 const host = document.querySelector('#kiwi-scene');
 const asset = path => new URL(path, import.meta.url).href;
@@ -33,7 +33,7 @@ if (renderer) {
   scene.add(modelGroup);
   const lights = [
     {color:palette.vif,intensity:25,distance:20,decay:1.76,position:[-1.0800012920987254,-.9419390674979656,1.2214126197837032]},
-    {color:palette.fleur,intensity:25,distance:34.15,decay:0,position:[.8663944921239622,1.1823807542632467,1.2214126197837032]}
+    {color:palette.neon,intensity:25,distance:34.15,decay:0,position:[.8663944921239622,1.1823807542632467,1.2214126197837032]}
   ];
   for (const settings of lights) {
     const light = new T.PointLight(settings.color,settings.intensity,settings.distance,settings.decay);
@@ -63,7 +63,7 @@ if (renderer) {
   alpha.wrapS = alpha.wrapT = T.ClampToEdgeWrapping;
   alpha.colorSpace = T.NoColorSpace;
   const material = new T.MeshPhysicalMaterial({
-    color:palette.vif,emissive:palette.fleur,emissiveIntensity:1,metalness:1,roughness:1,
+    color:palette.vif,emissive:palette.vif,emissiveIntensity:1,metalness:1,roughness:1,
     ior:1.5,reflectivity:.5,specularIntensity:0,alphaMap:alpha,alphaTest:.1,
     side:T.FrontSide,transparent:false
   });

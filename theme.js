@@ -1,9 +1,8 @@
-// ÉDITION LIMITÉE · BOUGAINVILLÉE — exact colors from Kiwi brand.html.
-// Keep synchronized with brand-palette.json and the CSS custom properties.
-export const BOUGAINVILLEE = Object.freeze({
-  nuit: 0x1b0e2e,
-  velours: 0x5c1f4e,
-  vif: 0xc1487e,
-  fleur: 0xff8fc8,
+// Sphere-only Majorelle palette from Kiwi brand.html. The UI keeps Kiwi green.
+export const MAJORELLE = Object.freeze({
+  nuit: 0x0a1230,
+  velours: 0x1e2f7c,
+  vif: 0x3955d6,
+  neon: 0x5bd5ff,
   background: 0x000000
 });
