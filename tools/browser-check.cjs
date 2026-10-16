@@ -22,7 +22,11 @@ const url = process.argv[2] || 'http://127.0.0.1:8080';
  await links.nth(1).hover();await page.waitForTimeout(75);
  const stretched=await lens.boundingBox();
  assert.ok(stretched.width>initial.width,'Liquid lens must stretch between links');
+ // Reproduce scrolling during the 115ms stretch: repeated updates must not
+ // cancel the callback that shrinks the lens back to one selected item.
+ for(let i=0;i<8;i++){await page.evaluate(()=>dispatchEvent(new Event('scroll')));await page.waitForTimeout(20);}
  await page.waitForTimeout(500);
+ assert.equal(await page.locator('.desktop-nav a[data-on="true"]').count(),1);
  const settled=await lens.boundingBox(),target=await links.nth(1).boundingBox();
  assert.ok(Math.abs(settled.width-target.width)<2&&Math.abs(settled.x-target.x)<2,'Lens must settle on target');
  console.log('PASS original liquid lens stretch and settle');

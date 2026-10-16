@@ -63,10 +63,13 @@ window.addEventListener('resize',()=>{if(innerWidth>1100&&!mobileNav.hidden)clos
 function liquidLens(wrap){
  const lens=wrap.querySelector('.kw-lens');let previous=null,timer;
  function move(target,immediate=false){
-  if(!target||wrap.offsetWidth===0){lens.style.opacity='0';return;}
+  if(!target||wrap.offsetWidth===0){clearTimeout(timer);previous=null;lens.style.opacity='0';return;}
   const left=target.offsetLeft,width=target.offsetWidth;
   lens.style.top=target.offsetTop+'px';lens.style.height=target.offsetHeight+'px';lens.style.opacity='1';
   const place=(x,w)=>{lens.style.transform=`translateX(${x}px)`;lens.style.width=w+'px';};
+  // Scroll updates may repeat the same target while the lens is settling.
+  // Keep its pending settle callback alive until the target actually changes.
+  if(!immediate&&previous?.left===left&&previous?.width===width)return;
   clearTimeout(timer);
   if(immediate||!previous){lens.style.transition='none';place(left,width);void lens.offsetWidth;lens.style.transition='';}
   else if(previous.left!==left||previous.width!==width){const x=Math.min(previous.left,left),w=Math.max(previous.left+previous.width,left+width)-x;place(x,w);timer=setTimeout(()=>place(left,width),115);}
