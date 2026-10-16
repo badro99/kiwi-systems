@@ -1,23 +1,10 @@
-# ÉDITION LIMITÉE · BOUGAINVILLÉE
+# Original Kiwi identity with a Bougainvillée sphere
 
-Explicitly selected for the entire Kiwi Systems website on 2026-10-16. Reference: the Bougainvillée section of Kiwi’s existing `brand.html`. The site background remains pure black.
+Current direction: restore the original Kiwi colors everywhere except the animated background sphere, which stays pink. The background remains black.
 
-| Role | Original family | Bougainvillée |
-|---|---|---|
-| Deep tint | Deep Kiwi / dark green | Nuit `#1B0E2E` |
-| Dark supporting shade | Deep structural green | Velours `#5C1F4E` |
-| Main brand shade | Growth / Atlas / Signal green | Vif `#C1487E` |
-| Bright accent | Mint / neon green | Fleur `#FF8FC8` |
-| Background | Black | Black `#000000` |
+- `styles.css` and the existing SVG assets are restored exactly from the original Kiwi Systems version (`b48ff50`). This includes Systems and Commerce descriptors, wordmarks, monogram, favicon, sparkle, UI tints, accent text, status dots and decorative connection animations.
+- `scene.js` and `theme.js` retain the Bougainvillée sphere material, lighting and animation without changes. Nuit `#1B0E2E`, Velours `#5C1F4E`, Vif `#C1487E`, Fleur `#FF8FC8` remain the sphere palette.
+- The existing pink fallback posters and social-preview image are retained.
+- Layout, copy, interaction and scroll timing remain unchanged.
 
-Neutral white and gray text retains its contrast. Accent text, status dots, borders, gradients, focus indicators, selection colors, connection animations and navigation tints use the corresponding Bougainvillée values with the existing opacity levels.
-
-The Kiwi wordmark, monogram and favicon retain their original approved green/mint colors. In the Systems and Commerce lockups, only the Kiwi mark uses those original colors; the divider and branch descriptor remain Bougainvillée. The decorative sparkle stays Bougainvillée. Vector outlines, proportions and typography remain unchanged. Existing files are edited in place.
-
-The WebGL model, animation, camera, interaction and scroll timing remain the original Kiwi scene. Its material uses Vif and Fleur; its point lights use Vif and Fleur. The original green-producing hue grade is removed so it cannot override the new palette. The canvas clear color remains black.
-
-The fallback posters are captured from this real scene with `tools/capture-posters.cjs`, then encoded to the existing WebP filenames. They are displayed only if WebGL fails. The social-preview image uses the same updated landscape poster.
-
-`brand-palette.json`, `theme.js` and the CSS custom properties record the four exact reference colors. `tools/palette-check.cjs` audits palette consistency, existing SVG assets, and old green literals in authored runtime files.
-
-This standalone repository lives at `Documents/kiwi-systems`. The Kiwi OS repository and master brand files are untouched.
+All project files live in `Documents/kiwi-systems`. Kiwi OS files and master logo assets remain untouched.

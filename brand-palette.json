@@ -1,8 +1,14 @@
 {
-  "name": "ÉDITION LIMITÉE · BOUGAINVILLÉE",
+  "name": "Kiwi original · Bougainvillée background sphere",
   "nuit": "#1B0E2E",
   "velours": "#5C1F4E",
   "vif": "#C1487E",
   "fleur": "#FF8FC8",
-  "background": "#000000"
+  "background": "#000000",
+  "ui": {
+    "accent": "#00FFAE",
+    "growth": "#398063",
+    "mint": "#AAF0C1",
+    "background": "#000000"
+  }
 }
