@@ -1,11 +1,12 @@
 /**
  * Kiwi OS scene, ported from its shipped module 47373.
- * Original model, animation, shader material, lights, postprocessing, camera,
- * pointer easing and scroll keyframes are preserved. Asset URLs are relative
+ * Original model, animation, camera, pointer easing and scroll keyframes
+ * are preserved. Materials and lights use the Bougainvillée palette. Asset URLs are relative
  * to this module so the same scene works on GitHub project Pages.
  */
 import {THREE as T, POST as P} from './assets/vendor/kiwi-three.js';
 import {GLTFLoader, DRACOLoader} from './assets/vendor/kiwi-loaders.js';
+import {BOUGAINVILLEE as palette} from './theme.js';
 
 const host = document.querySelector('#kiwi-scene');
 const asset = path => new URL(path, import.meta.url).href;
@@ -18,9 +19,9 @@ try {
 }
 if (renderer) {
   const scene = new T.Scene();
-  scene.background = new T.Color(0);
+  scene.background = new T.Color(palette.background);
   scene.add(new T.AmbientLight(0xffffff, 2));
-  renderer.setClearColor(0,1);
+  renderer.setClearColor(palette.background,1);
   renderer.domElement.setAttribute('aria-hidden','true');
   host.appendChild(renderer.domElement);
 
@@ -31,8 +32,8 @@ if (renderer) {
   const modelGroup = new T.Group();
   scene.add(modelGroup);
   const lights = [
-    {color:1624831,intensity:25,distance:20,decay:1.76,position:[-1.0800012920987254,-.9419390674979656,1.2214126197837032]},
-    {color:59391,intensity:25,distance:34.15,decay:0,position:[.8663944921239622,1.1823807542632467,1.2214126197837032]}
+    {color:palette.vif,intensity:25,distance:20,decay:1.76,position:[-1.0800012920987254,-.9419390674979656,1.2214126197837032]},
+    {color:palette.fleur,intensity:25,distance:34.15,decay:0,position:[.8663944921239622,1.1823807542632467,1.2214126197837032]}
   ];
   for (const settings of lights) {
     const light = new T.PointLight(settings.color,settings.intensity,settings.distance,settings.decay);
@@ -43,7 +44,7 @@ if (renderer) {
   composer.addPass(new P.RenderPass(scene,camera));
   const bloom = new P.BloomEffect({intensity:1.5,radius:.75,luminanceThreshold:.9,luminanceSmoothing:.02849,mipmapBlur:true});
   bloom.luminancePass.enabled = false;
-  composer.addPass(new P.EffectPass(camera,bloom,new P.ToneMappingEffect({mode:7}),new P.HueSaturationEffect({hue:-1.0716814692820413,saturation:.21})));
+  composer.addPass(new P.EffectPass(camera,bloom,new P.ToneMappingEffect({mode:7})));
   function resize() {
     const aspect = innerWidth/innerHeight;
     camera.aspect = aspect;
@@ -62,7 +63,7 @@ if (renderer) {
   alpha.wrapS = alpha.wrapT = T.ClampToEdgeWrapping;
   alpha.colorSpace = T.NoColorSpace;
   const material = new T.MeshPhysicalMaterial({
-    color:27903,emissive:6661631,emissiveIntensity:1,metalness:1,roughness:1,
+    color:palette.vif,emissive:palette.fleur,emissiveIntensity:1,metalness:1,roughness:1,
     ior:1.5,reflectivity:.5,specularIntensity:0,alphaMap:alpha,alphaTest:.1,
     side:T.FrontSide,transparent:false
   });
