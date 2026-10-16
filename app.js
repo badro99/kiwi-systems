@@ -6,28 +6,87 @@ skip:'Skip to content',language:'Language',navServices:'Expertise',navApproach:'
 ar: {
 skip:'انتقل إلى المحتوى',language:'اللغة',navServices:'خدماتنا',navApproach:'طريقة عملنا',talk:'لنتحدث عن مشروعك',branch:'فرع من Kiwi. والطموح نفسه.',hero1:'أفكارك.',hero2:'مساحتنا للإبداع.',heroDesc:'مواقع وتطبيقات وتجارة إلكترونية. نطوّر الأدوات التي تدفع أعمالك إلى الأمام.',start:'لنبنِ مشروعك معاً',discover:'اكتشف خدماتنا',based:'من المغرب. بطموح يتجاوز الحدود.',scroll:'خطوتك القادمة تبدأ هنا',expertiseLabel:'01 / خدماتنا',servicesTitle:'ثلاث طرق<br>لخطوتك القادمة.',servicesDesc:'من أول نقرة إلى الأداة التي تغيّر يومك. فريق واحد ورؤية واحدة ومشروع يعكس هويتك.',webTitle:'موقع يفتح<br>لك الأبواب.',webDesc:'موقع تعريفي أو منصة أو تطوير مخصص. حضور رقمي سريع ومتقن يحوّل الزيارات إلى تواصل مع عملائك.',webTag1:'تصميم مخصص',webTag2:'للجوال أولاً',appTitle:'عملك.<br>تطبيقك.',appDesc:'تطبيقات ويب وجوال وبوابات عملاء وأدوات داخلية. برمجيات تتكيف مع طريقة عملك.',appTag1:'ويب وجوال',appTag2:'أدوات الأعمال',appTag3:'تكاملات',commerceTitle:'متجرك.<br>والمغرب بين يديك.',commerceDesc:'يجمع Kiwi Commerce متجرك الإلكتروني ولوحة إدارة أعمالك. مصمم للبيع في المغرب مع الدفع عند الاستلام.',commerceTag1:'الدفع عند الاستلام',commerceTag2:'الطلبات والمخزون',familyLabel:'روح KIWI',manifesto:'التقنية تبسّط<br>الأشياء. <span>وتفتح<br>إمكانيات جديدة.</span>',familyLink:'اكتشف عالم Kiwi',commerceLabel:'تجارة إلكترونية تفهم السوق المغربي.',commerceHeading:'أنت تبيع.<br>وKiwi يربط التفاصيل.',commerceIntro:'في المغرب، تعتمد التجارة الإلكترونية على الدفع عند الاستلام. متجرك وعملياتك يستحقان منصة مبنية لهذا الواقع.',commerceCta:'أنشئ متجري',commerceNote:'علامتك في الواجهة. وKiwi خلف الكواليس.',demoLabel:'معاينة توضيحية · بيانات تجريبية',overview:'نظرة عامة',orders:'طلباتك',demoSales:'مبيعات مؤكدة',toConfirm:'بانتظار التأكيد',order:'الطلب',status:'الحالة',amount:'المبلغ',new:'جديد',shipped:'تم الشحن',confirmed:'مؤكد',confirmDemo:'جرّب: تأكيد الطلب',resetDemo:'إعادة العرض التجريبي',demoHint:'يُخصم المخزون عند تأكيد الطلب.',demoSuccess:'تم التأكيد. المخزون: 12 ← 11. بيانات تجريبية فقط.',flow1:'المتجر',flow2:'طلب بالدفع عند الاستلام',flow3:'التأكيد',flow4:'التوصيل',cf1title:'متجر يعكس هويتك',cf1desc:'تجربة سلسة على الجوال وكتالوج منتجاتك والدفع عند الاستلام. يطلب عملاؤك دون بطاقة بنكية.',cf2title:'كل الطلبات في مكان واحد',cf2desc:'بيانات التواصل والمدينة والعنوان والمقاسات والألوان: المعلومات اللازمة لتأكيد كل طلب وشحنه ومتابعته.',cf3title:'مخزون يواكب الواقع',cf3desc:'ينخفض المخزون عند تأكيد الطلب. وإلغاء طلب مؤكد يعيد المنتجات إلى المخزون تلقائياً.',cf4title:'مساحتك. بياناتك.',cf4desc:'لوحة إدارة محمية بتسجيل الدخول وقاعدة بيانات معزولة خاصة بنشاطك.',approachLabel:'02 / خطوات واضحة',approachTitle:'من «ماذا لو»<br>إلى «أصبح جاهزاً».',approachDesc:'تواصل مباشر ومراحل واضحة. وأنت معنا في كل خطوة من المشروع.',step1title:'نستمع إليك.',step1desc:'أهدافك وعملاؤك واحتياجاتك. نحدد معاً نطاق المشروع وأولوياته.',step2title:'نرسم الملامح.',step2desc:'توجه بصري ورحلات استخدام واضحة. ترى وجهتنا قبل بدء التطوير.',step3title:'نبني.',step3desc:'تطوير وتكاملات واختبارات على استخداماتك الفعلية. نهتم بكل تفصيل.',step4title:'ننطلق معاً.',step4desc:'إطلاق وتدريب ومواكبة. نخطط للخطوة التالية معك.',faqLabel:'إجابات تهمك',faqTitle:'قبل<br>الانطلاق.',q1:'ما العلاقة بين Kiwi Systems وKiwi؟',a1:'Kiwi Systems هو فرع Kiwi المتخصص في بناء المواقع والتطبيقات والبرمجيات المخصصة. وKiwi Commerce هو عرضنا للتجارة الإلكترونية.',q2:'كم تبلغ تكلفة المشروع؟',a2:'تعتمد التكلفة على نطاق المشروع ووظائفه وتكاملاته. بعد نقاش أولي، نقدم لك عرض سعر يناسب احتياجاتك.',q3:'هل يدعم Kiwi Commerce الدفع عند الاستلام؟',a3:'نعم. يطلب العميل دون بطاقة بنكية. تستقبل الطلب في لوحة الإدارة وتؤكده أو ترفضه، ثم تتابع الشحن والتوصيل.',q4:'هل يمكن تطوير أداة خاصة بنشاطي؟',a4:'نعم. بوابة عملاء أو تطبيق لإدارة أعمالك أو ربط بأدواتك الحالية: نصمم الحل انطلاقاً من طريقة عملك.',contactLabel:'لنبنِ الخطوة القادمة معاً.',contactTitle:'لديك فكرة؟<br>لنحوّلها إلى واقع.',contactDesc:'أخبرنا بما تريد إنجازه.<br>ونحدد الخطوة التالية معاً.',choiceWeb:'موقع إلكتروني',choiceApp:'تطبيق',whatsapp:'لنتحدث على واتساب',footer:'فرع من Kiwi. من المغرب، بكل طموح.',backTop:'العودة للأعلى ↑',messageWeb:'مرحباً Kiwi Systems، أود مناقشة مشروع موقع إلكتروني.',messageApp:'مرحباً Kiwi Systems، أود مناقشة مشروع تطبيق.',messageCommerce:'مرحباً Kiwi Systems، أود إنشاء متجر إلكتروني مع Kiwi Commerce.',pageTitle:'Kiwi Systems — أفكارك تنبض بالحياة.',meta:'Kiwi Systems يطوّر المواقع والتطبيقات والمتاجر الإلكترونية في المغرب. اكتشف Kiwi Commerce المصمم للدفع عند الاستلام.'
 }};
-const french = Object.fromEntries([...document.querySelectorAll('[data-i18n]')].map(el => [el.dataset.i18n, el.innerHTML]));
+
+Object.assign(translations.en,{
+heroTitle:'Your next chapter<br>starts here.',heroDesc:'Websites, apps and Kiwi Commerce.<br>Kiwi expertise, built around your ideas.',
+conceptLabel:'EXPLORE THE POSSIBILITIES',previewWebLabel:'01 / YOUR ONLINE PRESENCE',previewWebTitle:'Your brand.<br>A new dimension.',previewWebDesc:'Design that feels like you.<br>An experience that invites people to go further.',previewWebCta:'Let’s imagine your website',previewAppLabel:'02 / YOUR CUSTOM SOFTWARE',previewAppTitle:'Less friction.<br>More possibilities.',previewAppDesc:'Your team, customers and operations.<br>Connected through a tool designed for you.',previewAppCta:'Let’s talk about your app',portal:'Workspace',connected:'Connected',appPeople:'Your team',appTool:'Your tool',appData:'Your operations',appPortal:'Customer portal',appWorkflow:'Business workflows',appIntegrations:'Custom integrations',previewCommerceLabel:'03 / CONNECTED COMMERCE',previewCommerceTitle:'From your store<br>to their door.',previewCommerceDesc:'Your storefront, orders and inventory.<br>Cash on delivery at the heart of the journey.',previewCommerceCta:'Explore Kiwi Commerce'
+});
+Object.assign(translations.ar,{
+heroTitle:'فصلك القادم<br>يبدأ هنا.',heroDesc:'مواقع وتطبيقات وKiwi Commerce.<br>خبرة Kiwi في خدمة أفكارك.',conceptLabel:'اكتشف الإمكانيات',previewWebLabel:'01 / حضورك الرقمي',previewWebTitle:'علامتك.<br>بُعد جديد.',previewWebDesc:'تصميم يعكس هويتك.<br>وتجربة تدعو عملاءك لاكتشاف المزيد.',previewWebCta:'لنتخيل موقعك معاً',previewAppLabel:'02 / برمجياتك المخصصة',previewAppTitle:'عقبات أقل.<br>إمكانيات أكثر.',previewAppDesc:'فريقك وعملاؤك وعملياتك.<br>متصلون بأداة مصممة من أجلك.',previewAppCta:'لنتحدث عن تطبيقك',portal:'مساحة العمل',connected:'متصل',appPeople:'فريقك',appTool:'أداتك',appData:'عملياتك',appPortal:'بوابة العملاء',appWorkflow:'سير العمل',appIntegrations:'تكاملات مخصصة',previewCommerceLabel:'03 / تجارة متصلة',previewCommerceTitle:'من متجرك<br>إلى باب عملائك.',previewCommerceDesc:'متجرك وطلباتك ومخزونك.<br>والدفع عند الاستلام في صميم التجربة.',previewCommerceCta:'اكتشف Kiwi Commerce'
+});
+const french = Object.fromEntries([...document.querySelectorAll('[data-i18n]')].map(el=>[el.dataset.i18n,el.innerHTML]));
 Object.assign(french,{confirmed:'Confirmée',resetDemo:'Recommencer la démo',demoSuccess:'Commande confirmée. Stock : 12 → 11. Données de démonstration.',messageWeb:'Bonjour Kiwi Systems, je souhaite discuter d’un projet de site web.',messageApp:'Bonjour Kiwi Systems, je souhaite discuter d’un projet d’application.',messageCommerce:'Bonjour Kiwi Systems, je souhaite créer une boutique avec Kiwi Commerce.',pageTitle:document.title,meta:document.querySelector('meta[name="description"]').content});
 translations.fr=french;
 let lang='fr',service='web',confirmed=false;
-const text = key => translations[lang][key] || french[key] || key;
-function updateContact(){const key={web:'messageWeb',app:'messageApp',commerce:'messageCommerce'}[service];document.querySelector('#contact-whatsapp').href='https://wa.me/212624495159?text='+encodeURIComponent(text(key));document.querySelectorAll('[data-choice]').forEach(el=>{const selected=el.dataset.choice===service;el.classList.toggle('selected',selected);el.setAttribute('aria-pressed',String(selected));});}
-function renderDemo(){const status=document.querySelector('#order-status');status.textContent=text(confirmed?'confirmed':'new');status.classList.toggle('shipped',confirmed);document.querySelector('#demo-pending').textContent=confirmed?'00':'01';document.querySelector('#demo-revenue').innerHTML=(confirmed?'1 630':'1 240')+' <small>MAD</small>';document.querySelector('#confirm-demo span').textContent=text(confirmed?'resetDemo':'confirmDemo');document.querySelector('#demo-feedback').textContent=text(confirmed?'demoSuccess':'demoHint');}
-function setLanguage(next){lang=translations[next]?next:'fr';document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=text(el.dataset.i18n);});document.title=text('pageTitle');document.querySelector('meta[name="description"]').content=text('meta');document.querySelector('#language').value=lang;try{localStorage.setItem('kiwi-systems-language',lang);}catch{}updateContact();renderDemo();}
-document.querySelector('#language').addEventListener('change',e=>setLanguage(e.target.value));
+const text=key=>translations[lang][key]||french[key]||key;
+function updateContact(){
+ const key={web:'messageWeb',app:'messageApp',commerce:'messageCommerce'}[service];
+ document.querySelector('#contact-whatsapp').href='https://wa.me/212624495159?text='+encodeURIComponent(text(key));
+ document.querySelectorAll('[data-choice]').forEach(el=>{const selected=el.dataset.choice===service;el.classList.toggle('selected',selected);el.setAttribute('aria-pressed',String(selected));});
+}
+function renderDemo(){
+ const status=document.querySelector('#order-status');status.textContent=text(confirmed?'confirmed':'new');status.classList.toggle('shipped',confirmed);
+ document.querySelector('#demo-pending').textContent=confirmed?'00':'01';
+ document.querySelector('#demo-revenue').innerHTML=(confirmed?'1 630':'1 240')+' <small>MAD</small>';
+ document.querySelector('#confirm-demo span').textContent=text(confirmed?'resetDemo':'confirmDemo');
+ document.querySelector('#demo-feedback').textContent=text(confirmed?'demoSuccess':'demoHint');
+}
+const languageLabels={fr:'Choisir la langue',en:'Choose language',ar:'اختر اللغة'};
+function setLanguage(next){
+ lang=translations[next]?next:'fr';document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=text(el.dataset.i18n);});
+ document.title=text('pageTitle');document.querySelector('meta[name="description"]').content=text('meta');
+ document.querySelector('#locale-code').textContent=lang.toUpperCase();
+ document.querySelector('#locale-trigger').setAttribute('aria-label',languageLabels[lang]);
+ document.querySelectorAll('[data-locale]').forEach(el=>{if(el.dataset.locale===lang)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});
+ try{localStorage.setItem('kiwi-systems-language',lang);}catch{}
+ updateContact();renderDemo();document.dispatchEvent(new Event('kiwi:language'));
+}
+const locale=document.querySelector('.locale-dropdown'),localeButton=document.querySelector('#locale-trigger'),localeList=document.querySelector('#locale-list');
+function closeLocale(focus=false){locale.dataset.open='false';localeButton.setAttribute('aria-expanded','false');localeList.hidden=true;if(focus)localeButton.focus();}
+localeButton.addEventListener('click',()=>{const open=locale.dataset.open!=='true';locale.dataset.open=String(open);localeButton.setAttribute('aria-expanded',String(open));localeList.hidden=!open;});
+localeButton.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();locale.dataset.open='true';localeButton.setAttribute('aria-expanded','true');localeList.hidden=false;localeList.querySelector('button').focus();}});
+localeList.addEventListener('keydown',event=>{const items=[...localeList.querySelectorAll('button')],index=items.indexOf(document.activeElement);if(['ArrowDown','ArrowUp'].includes(event.key)){event.preventDefault();items[(index+(event.key==='ArrowDown'?1:-1)+items.length)%items.length].focus();}});
+document.querySelectorAll('[data-locale]').forEach(el=>el.addEventListener('click',()=>{setLanguage(el.dataset.locale);closeLocale(true);}));
+document.addEventListener('click',event=>{if(!locale.contains(event.target))closeLocale();});
 document.querySelectorAll('[data-choice],[data-service]').forEach(el=>el.addEventListener('click',()=>{service=el.dataset.choice||el.dataset.service;updateContact();}));
 document.querySelector('#confirm-demo').addEventListener('click',()=>{confirmed=!confirmed;renderDemo();});
-const menu=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('#mobile-nav');
-function closeMenu(){menu.setAttribute('aria-expanded','false');mobileNav.hidden=true;}
-menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));mobileNav.hidden=!open;});
-mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});window.addEventListener('resize',()=>{if(innerWidth>700)closeMenu();});
+const menu=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('#mobile-nav'),header=document.querySelector('.header');
+let previousOverflow='';
+function closeMenu(focus=false){menu.setAttribute('aria-expanded','false');mobileNav.hidden=true;header.classList.remove('menu-open');document.body.style.overflow=previousOverflow;if(focus)menu.focus();}
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';if(open){previousOverflow=document.body.style.overflow;menu.setAttribute('aria-expanded','true');mobileNav.hidden=false;header.classList.add('menu-open');document.body.style.overflow='hidden';closeLocale();}else closeMenu();});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeMenu()));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(!localeList.hidden)closeLocale(true);if(!mobileNav.hidden)closeMenu(true);}if(event.key==='Tab'&&!mobileNav.hidden){const items=[menu,...mobileNav.querySelectorAll('a')],first=items[0],last=items.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+window.addEventListener('resize',()=>{if(innerWidth>1100&&!mobileNav.hidden)closeMenu();});
+
+/** Port of Kiwi OS useLiquidLens (module 98291), preserving the 115ms stretch. */
+function liquidLens(wrap){
+ const lens=wrap.querySelector('.kw-lens');let previous=null,timer;
+ function move(target,immediate=false){
+  if(!target||wrap.offsetWidth===0){lens.style.opacity='0';return;}
+  const left=target.offsetLeft,width=target.offsetWidth;
+  lens.style.top=target.offsetTop+'px';lens.style.height=target.offsetHeight+'px';lens.style.opacity='1';
+  const place=(x,w)=>{lens.style.transform=`translateX(${x}px)`;lens.style.width=w+'px';};
+  clearTimeout(timer);
+  if(immediate||!previous){lens.style.transition='none';place(left,width);void lens.offsetWidth;lens.style.transition='';}
+  else if(previous.left!==left||previous.width!==width){const x=Math.min(previous.left,left),w=Math.max(previous.left+previous.width,left+width)-x;place(x,w);timer=setTimeout(()=>place(left,width),115);}
+  previous={left,width};
+ }
+ const current=()=>wrap.querySelector('[data-on="true"]');
+ new ResizeObserver(()=>move(current(),true)).observe(wrap);
+ document.addEventListener('kiwi:language',()=>requestAnimationFrame(()=>move(current(),true)));
+ return {move,current};
+}
+const nav=document.querySelector('.desktop-nav'),navLens=liquidLens(nav);let hovered=null,active=null;
+function updateNav(){header.classList.toggle('scrolled',scrollY>8);document.querySelector('#kiwi-scene').style.setProperty('--scene-dim',Math.max(0,Math.min(.72,(scrollY-document.querySelector('.hero').offsetHeight*.45)/(innerHeight*.6)*.72)));active=null;for(const id of ['services','commerce','approach'])if(document.getElementById(id).getBoundingClientRect().top<=innerHeight*.34)active=nav.querySelector(`[href="#${id}"]`);nav.querySelectorAll('a').forEach(a=>a.dataset.on=String(a===(hovered||active)));navLens.move(hovered||active);}
+nav.querySelectorAll('a').forEach(a=>{a.addEventListener('pointerenter',()=>{hovered=a;updateNav();});a.addEventListener('focus',()=>{hovered=a;updateNav();});});
+nav.addEventListener('pointerleave',()=>{hovered=null;updateNav();});nav.addEventListener('focusout',event=>{if(!nav.contains(event.relatedTarget)){hovered=null;updateNav();}});
+addEventListener('scroll',updateNav,{passive:true});updateNav();
+const tabs=document.querySelector('.showcase-tabs'),tabLens=liquidLens(tabs);
+function showPreview(id){document.querySelectorAll('[data-preview]').forEach(button=>{const selected=button.dataset.preview===id;button.setAttribute('aria-selected',String(selected));button.dataset.on=String(selected);button.tabIndex=selected?0:-1;document.getElementById('preview-'+button.dataset.preview).hidden=!selected;});tabLens.move(tabLens.current());}
+tabs.querySelectorAll('[data-preview]').forEach(button=>{button.addEventListener('click',()=>showPreview(button.dataset.preview));button.addEventListener('keydown',event=>{const items=[...tabs.querySelectorAll('[data-preview]')],index=items.indexOf(button),direction=document.documentElement.dir==='rtl'?-1:1;let next;if(event.key==='ArrowRight')next=(index+direction+items.length)%items.length;if(event.key==='ArrowLeft')next=(index-direction+items.length)%items.length;if(event.key==='Home')next=0;if(event.key==='End')next=items.length-1;if(next!==undefined){event.preventDefault();items[next].focus();showPreview(items[next].dataset.preview);}});});
+requestAnimationFrame(()=>tabLens.move(tabLens.current(),true));
 document.querySelector('#year').textContent=new Date().getFullYear();
 try{setLanguage(localStorage.getItem('kiwi-systems-language')||'fr');}catch{setLanguage('fr');}
-const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
-if(!reduced.matches && 'IntersectionObserver' in window){document.documentElement.classList.add('motion-ready');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
-// A lightweight, deterministic field inspired by Kiwi's luminous green scene.
-const canvas=document.querySelector('#kiwi-field'),ctx=canvas.getContext('2d');let width=0,height=0,frame=0,running=false,animation;
-function resizeField(){const box=canvas.getBoundingClientRect();width=box.width;height=box.height;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
-function drawField(){if(!running)return;frame+=.004;ctx.clearRect(0,0,width,height);const cx=width*.81,cy=height*.48;for(let i=0;i<95;i++){const angle=i*2.39996+frame*.2,radius=80+Math.sqrt(i/95)*Math.min(width*.34,380);const x=cx+Math.cos(angle)*radius,y=cy+Math.sin(angle)*radius*.73;const a=.12+(Math.sin(frame+i)*.5+.5)*.45;ctx.fillStyle=`rgba(130,255,189,${a})`;ctx.beginPath();ctx.arc(x,y,i%7===0?2:1,0,Math.PI*2);ctx.fill();if(i%4===0){ctx.strokeStyle=`rgba(80,220,145,${a*.22})`;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+Math.cos(angle)*30,y+Math.sin(angle)*30);ctx.stroke();}}animation=requestAnimationFrame(drawField);}
-function startField(){cancelAnimationFrame(animation);running=!reduced.matches&&!document.hidden&&document.querySelector('.hero').getBoundingClientRect().bottom>0;if(running)drawField();}
-if(ctx){resizeField();window.addEventListener('resize',resizeField);document.addEventListener('visibilitychange',startField);reduced.addEventListener('change',startField);if('IntersectionObserver' in window)new IntersectionObserver(startField).observe(canvas);startField();}
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+if(!reduced.matches&&'IntersectionObserver'in window){document.documentElement.classList.add('motion-ready');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
