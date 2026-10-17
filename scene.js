@@ -40,7 +40,7 @@ if (renderer) {
     light.position.set(...settings.position);
     modelGroup.add(light);
   }
-  const composer = new P.EffectComposer(renderer);
+  const composer = new P.EffectComposer(renderer,{multisampling:4});
   composer.addPass(new P.RenderPass(scene,camera));
   const bloom = new P.BloomEffect({intensity:1.5,radius:.75,luminanceThreshold:.9,luminanceSmoothing:.02849,mipmapBlur:true});
   bloom.luminancePass.enabled = false;
@@ -52,7 +52,7 @@ if (renderer) {
   const lightMaterial = new T.ShaderMaterial({
     uniforms:{inputTexture:{value:null}}, depthTest:false, depthWrite:false,
     vertexShader:'varying vec2 vUv; void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',
-    fragmentShader:'uniform sampler2D inputTexture;varying vec2 vUv;void main(){vec3 c=texture2D(inputTexture,vUv).rgb;float a=clamp(max(c.r,max(c.g,c.b))*1.5,0.,1.);gl_FragColor=vec4(mix(vec3(247./255.,247./255.,242./255.),c,a),1.);}'
+    fragmentShader:'uniform sampler2D inputTexture;varying vec2 vUv;void main(){vec3 c=texture2D(inputTexture,vUv).rgb;float peak=max(c.r,max(c.g,c.b));float a=smoothstep(.035,.8,peak);vec3 ink=c/max(peak,.001);gl_FragColor=vec4(mix(vec3(247./255.,247./255.,242./255.),ink,a),1.);}'
   });
   lightScene.add(new T.Mesh(new T.PlaneGeometry(2,2),lightMaterial));
   composer.addPass({enabled:true,needsSwap:true,renderToScreen:false,
@@ -68,7 +68,7 @@ if (renderer) {
     camera.aspect = aspect;
     camera.position.set(0,-.02141615313266465,8.391871340979279*Math.min(Math.max(Math.sqrt((16/9)/aspect),1),2.6));
     camera.updateProjectionMatrix();
-    renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<700?1.5:2));
+    renderer.setPixelRatio(Math.min(Math.max(devicePixelRatio,1.5),2));
     renderer.setSize(innerWidth,innerHeight);
     composer.setSize(innerWidth,innerHeight);
     bloom.intensity = innerWidth<700?1.15:1.5;
@@ -80,9 +80,10 @@ if (renderer) {
   const alpha = new T.TextureLoader().load(asset('assets/scene/alpha-map.png'));
   alpha.wrapS = alpha.wrapT = T.ClampToEdgeWrapping;
   alpha.colorSpace = T.NoColorSpace;
+  alpha.anisotropy = Math.min(8,renderer.capabilities.getMaxAnisotropy());
   const material = new T.MeshPhysicalMaterial({
     color:palette.vif,emissive:palette.vif,emissiveIntensity:1,metalness:1,roughness:1,
-    ior:1.5,reflectivity:.5,specularIntensity:0,alphaMap:alpha,alphaTest:.1,
+    ior:1.5,reflectivity:.5,specularIntensity:0,alphaMap:alpha,alphaTest:.1,alphaToCoverage:true,
     side:T.FrontSide,transparent:false
   });
   let mixer,ready=false;

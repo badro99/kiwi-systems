@@ -16,3 +16,7 @@ The Kiwi leaf mark uses the exact two dominant colors sampled from the user’s 
 ## Porcelain light edition
 
 The page now uses porcelain `#F7F7F2`, black text, pale glass surfaces and cobalt status dots. Existing logos remain byte-for-byte unchanged, displayed on deep-blue backplates to preserve their white lettering. A final render-compositing pass places the original blue sphere glow onto porcelain; all sphere materials, lights, model, camera and motion remain unchanged. Fallback and social images are recaptured from this scene.
+
+## Light-logo and sphere correction
+
+Logo backplates are removed. Only the white iwi lettering becomes black; both blue K shapes, descriptors and dividers retain their colors. The sphere now uses 4-sample MSAA, alpha-to-coverage, anisotropic texture filtering, and a minimum 1.5× render scale (up to 2× on Retina). The light-background composite normalizes glow color before blending, avoiding the previous dark halo. Model and animation are unchanged.
