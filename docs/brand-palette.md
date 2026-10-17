@@ -8,3 +8,7 @@ The entire Kiwi Systems website uses Majorelle, including existing logo marks an
 - Néon `#5BD5FF`: text accents, selected controls, highlights, focus rings, glows and secondary sphere light.
 
 Original SVG geometry, white lettering, typography, copy, layout and all motion are preserved. The animated scene and matching fallback/social images already use Majorelle and remain unchanged. Kiwi OS and its master logos are untouched.
+
+## Kiwi mark reference update
+
+The Kiwi leaf mark uses the exact two dominant colors sampled from the user’s reference: dark blue `#222F77` and cobalt `#3F54CE`. White lettering, descriptors, dividers and the rest of the Majorelle website remain unchanged. This applies to the existing Systems, Commerce, Kiwi, standalone mark and favicon assets.

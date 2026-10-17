@@ -20,5 +20,6 @@ for branch in ['Systems','Commerce']:
  source=re.sub(r'<text.*?</text>','\n'.join(paths),source,flags=re.S)
  source=source.replace('Kiwi Commerce','Kiwi '+branch).replace('viewBox="183.73 209.36 1846.5 466.1"',f'viewBox="183.73 209.36 {x-183.73+20:.2f} 466.1"')
  source=source.replace('#398063','#3955d6').replace('#aaf0c1','#5bd5ff')
+ source=source.replace('fill="#3955d6"','fill="#222f77"',1).replace('fill="#5bd5ff"','fill="#3f54ce"',1)
  (Path(__file__).resolve().parent.parent/'assets'/('kiwi-'+branch.lower()+'.svg')).write_text(source)
 print('Official Kiwi paths and Inter Tight descriptors outlined for Systems and Commerce.')
