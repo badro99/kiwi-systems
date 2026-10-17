@@ -16,7 +16,7 @@ Open http://localhost:8080. ES modules require HTTP; opening index.html as a fil
 - `assets/vendor/kiwi-three.js` contains the exact shipped Three.js r170 and postprocessing code. `kiwi-loaders.js` contains the original GLTF and Draco loaders. `tools/extract-parent-runtime.py` regenerates these from the parent repository’s shipped chunks.
 - `scroll.js` uses the original Lenis 1.3.25 runtime and its desktop scroll settings; touch and reduced-motion keep native scrolling.
 - `app.js` ports Kiwi’s liquid-lens navigation behavior (module 98291), including the 115ms stretch before settling. The custom locale dropdown follows the parent landing’s component.
-- UI colors and all existing logo assets use Majorelle, including Systems and Commerce descriptors. The animated background sphere and its fallback/social images also use Majorelle. The background stays black. See `docs/brand-palette.md`.
+- UI colors and all existing logo assets use Majorelle, including Systems and Commerce descriptors. The animated background sphere and its fallback/social images also use Majorelle. The background is porcelain `#F7F7F2`, with black text and pale glass surfaces; logos retain their approved blues and white lettering on dark backplates. See `docs/brand-palette.md`.
 - Systems uses the official Kiwi mark and the same descriptor layout as the approved Commerce lockup. Descriptor lettering is outlined Inter Tight, removing font substitution in SVG images. `tools/build-lockups.py` documents generation.
 - Inter Tight and IBM Plex Sans Arabic are served locally with their font licenses.
 

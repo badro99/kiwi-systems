@@ -45,6 +45,24 @@ if (renderer) {
   const bloom = new P.BloomEffect({intensity:1.5,radius:.75,luminanceThreshold:.9,luminanceSmoothing:.02849,mipmapBlur:true});
   bloom.luminancePass.enabled = false;
   composer.addPass(new P.EffectPass(camera,bloom,new P.ToneMappingEffect({mode:7})));
+  // Composite the original black-backed glow onto porcelain without changing
+  // the sphere's material, lighting, bloom, camera or animation.
+  const lightScene = new T.Scene();
+  const lightCamera = new T.OrthographicCamera(-1,1,1,-1,0,1);
+  const lightMaterial = new T.ShaderMaterial({
+    uniforms:{inputTexture:{value:null}}, depthTest:false, depthWrite:false,
+    vertexShader:'varying vec2 vUv; void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',
+    fragmentShader:'uniform sampler2D inputTexture;varying vec2 vUv;void main(){vec3 c=texture2D(inputTexture,vUv).rgb;float a=clamp(max(c.r,max(c.g,c.b))*1.5,0.,1.);gl_FragColor=vec4(mix(vec3(247./255.,247./255.,242./255.),c,a),1.);}'
+  });
+  lightScene.add(new T.Mesh(new T.PlaneGeometry(2,2),lightMaterial));
+  composer.addPass({enabled:true,needsSwap:true,renderToScreen:false,
+    initialize(){},setSize(){},dispose(){lightMaterial.dispose();},
+    render(renderer,inputBuffer,outputBuffer){
+      lightMaterial.uniforms.inputTexture.value=inputBuffer.texture;
+      renderer.setRenderTarget(this.renderToScreen?null:outputBuffer);
+      renderer.render(lightScene,lightCamera);
+    }
+  });
   function resize() {
     const aspect = innerWidth/innerHeight;
     camera.aspect = aspect;

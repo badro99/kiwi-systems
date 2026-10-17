@@ -4,5 +4,11 @@
   "velours": "#1E2F7C",
   "vif": "#3955D6",
   "neon": "#5BD5FF",
-  "background": "#000000"
+  "background": "#F7F7F2",
+  "text": "#000000",
+  "logo": {
+    "dark": "#222F77",
+    "cobalt": "#3F54CE",
+    "lettering": "#F2F2F2"
+  }
 }
