@@ -71,7 +71,7 @@ const url = process.argv[2] || 'http://127.0.0.1:8080';
  await fallback.waitForFunction(()=>document.querySelector('#kiwi-scene').dataset.state==='fallback');
  assert.ok(await fallback.locator('.scene-fallback').isVisible());
  assert.ok(await fallback.locator('.scene-fallback img').evaluate(e=>e.complete&&e.naturalWidth>0));
- assert.ok((await fallback.locator('.scene-fallback source').getAttribute('srcset')).includes('?v=11'));
+ assert.ok((await fallback.locator('.scene-fallback source').getAttribute('srcset')).includes('?v=12'));
  console.log('PASS porcelain background, Majorelle accents and Majorelle WebGL fallback');
  await browser.close();
 })().catch(error=>{console.error(error);process.exit(1);});

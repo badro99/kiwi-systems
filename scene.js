@@ -6,7 +6,7 @@
  */
 import {THREE as T, POST as P} from './assets/vendor/kiwi-three.js';
 import {GLTFLoader, DRACOLoader} from './assets/vendor/kiwi-loaders.js';
-import {MAJORELLE as palette} from './theme.js?v=7';
+import {MAJORELLE as palette} from './theme.js?v=12';
 
 const host = document.querySelector('#kiwi-scene');
 const asset = path => new URL(path, import.meta.url).href;

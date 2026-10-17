@@ -12,9 +12,9 @@ for(const file of [...fs.readdirSync(path.join(root,'assets')).filter(f=>f.endsW
 }
 assert.ok(read('styles.css').toString().includes('background:#f7f7f2'));
 assert.ok(read('assets/kiwi-systems.svg').toString().includes('#3955d6'));
-for(const file of fs.readdirSync(path.join(root,'assets')).filter(f=>f.endsWith('.svg')).map(f=>'assets/'+f)) assert.equal(read(file).toString(),execFileSync('git',['show','b5d0639:'+file],{cwd:root}).toString().replace(/#f2f2f2/g,['assets/kiwi-systems.svg','assets/kiwi-commerce.svg','assets/kiwi-logo.svg'].includes(file)?'#000000':'#f2f2f2'),'Only wordmark ink may change: '+file);
+for(const file of fs.readdirSync(path.join(root,'assets')).filter(f=>f.endsWith('.svg')).map(f=>'assets/'+f)) assert.equal(read(file).toString(),execFileSync('git',['show','b5d0639:'+file],{cwd:root}).toString().replace(/#5bd5ff/g,'#3f54ce').replace(/#f2f2f2/g,['assets/kiwi-systems.svg','assets/kiwi-commerce.svg','assets/kiwi-logo.svg'].includes(file)?'#000000':'#f2f2f2'),'Only wordmark ink may change: '+file);
 const theme=read('theme.js').toString(),scene=read('scene.js').toString();
-for(const color of ['0x0a1230','0x1e2f7c','0x3955d6','0x5bd5ff'])assert.ok(theme.includes(color));
+for(const color of ['0x0a1230','0x1e2f7c','0x3955d6','0x3f54ce'])assert.ok(theme.includes(color));
 assert.match(scene,/color:palette\.vif,emissive:palette\.vif/);
 assert.match(scene,/color:palette\.neon,intensity:25/);
 assert.ok(!scene.includes('HueSaturationEffect'));

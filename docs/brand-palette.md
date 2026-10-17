@@ -20,3 +20,7 @@ The page now uses porcelain `#F7F7F2`, black text, pale glass surfaces and cobal
 ## Light-logo and sphere correction
 
 Logo backplates are removed. Only the white iwi lettering becomes black; both blue K shapes, descriptors and dividers retain their colors. The sphere now uses 4-sample MSAA, alpha-to-coverage, anisotropic texture filtering, and a minimum 1.5× render scale (up to 2× on Retina). The light-background composite normalizes glow color before blending, avoiding the previous dark halo. Model and animation are unchanged.
+
+## Cyan removed
+
+Bright cyan is replaced throughout the active site with cobalt `#3F54CE`, including Systems / Commerce descriptors, decorative tints and the secondary sphere light. The two blue K colors, black lettering and porcelain background remain unchanged.
