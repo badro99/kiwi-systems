@@ -1,4 +1,4 @@
-// Sphere-only Majorelle palette from Kiwi brand.html. The UI keeps Kiwi green.
+// Full Majorelle identity from Kiwi brand.html; the page background remains black.
 export const MAJORELLE = Object.freeze({
   nuit: 0x0a1230,
   velours: 0x1e2f7c,

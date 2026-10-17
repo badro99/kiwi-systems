@@ -15,9 +15,10 @@ for branch in ['Systems','Commerce']:
  x=1183.73;paths=[]
  for ch in branch:
   name=cmap[ord(ch)];pen=SVGPathPen(glyphs);glyphs[name].draw(TransformPen(pen,(scale,0,0,-scale,x,663.7)))
-  paths.append('<path d="'+pen.getCommands()+'" fill="#aaf0c1"/>');x+=glyphs[name].width*scale-1
+  paths.append('<path d="'+pen.getCommands()+'" fill="#5bd5ff"/>');x+=glyphs[name].width*scale-1
  source=re.sub(r'<defs>.*?</defs>','',original,flags=re.S)
  source=re.sub(r'<text.*?</text>','\n'.join(paths),source,flags=re.S)
  source=source.replace('Kiwi Commerce','Kiwi '+branch).replace('viewBox="183.73 209.36 1846.5 466.1"',f'viewBox="183.73 209.36 {x-183.73+20:.2f} 466.1"')
+ source=source.replace('#398063','#3955d6').replace('#aaf0c1','#5bd5ff')
  (Path(__file__).resolve().parent.parent/'assets'/('kiwi-'+branch.lower()+'.svg')).write_text(source)
 print('Official Kiwi paths and Inter Tight descriptors outlined for Systems and Commerce.')
